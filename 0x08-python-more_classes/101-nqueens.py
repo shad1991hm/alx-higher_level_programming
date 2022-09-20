@@ -83,9 +83,7 @@ if __name__ == '__main__':
         print("Usage: nqueens N")
         sys.exit(1)
 
-    try:
-        size = int(sys.argv[1])
-    except:
+    if argv[1].isdigit() is False:
         print("N must be a number")
         sys.exit(1)
 
